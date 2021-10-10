@@ -25,18 +25,14 @@ data = [
 def hello():
     return "Hello วริษา ริมสมุทร เลขที่37 ห้อง4/5" 
 
-
-
-
-
 @app.route('/api', methods=['GET'])
 def get_api():
     return jsonify(data)
 
-
 @app.route(‘/hi’)
 @app.route(‘/hello’)
 def hi():
-   return “สวัสดี”     
+        return“สวัสดี”
+
 if __name__ == "__main__":
     app.run(debug=False)
